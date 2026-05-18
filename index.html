@@ -3,76 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Product Teardown Cards</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Joely 的 AI 产品与 Vibe Coding 个人网站。">
+  <title>Joely | AI Product Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-  <a class="exit-link" href="../works.html" aria-label="退出到落地作品">ESC X</a>
-  <main class="app">
-    <section class="intro">
-      <p class="eyebrow">AI Product Teardown Cards</p>
-      <h1>AI 产品拆解卡片生成器</h1>
-    </section>
+<body class="home-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="回到首页">
+      <span class="brand-mark">AI</span>
+      <span>Joely</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a class="active" href="index.html"><span>00</span><b>首页</b></a>
+      <a href="about.html"><span>01</span><b>个人信息</b></a>
+      <a href="projects.html"><span>02</span><b>能力作品</b></a>
+      <a href="works.html"><span>03</span><b>落地作品</b></a>
+      <a href="play.html"><span>04</span><b>趣味实验</b></a>
+    </nav>
+  </header>
 
-    <section class="workspace">
-      <aside class="picker">
-        <div class="tool-row">
-          <button class="tool-button primary" id="new-card" type="button">新增产品</button>
+  <main>
+    <section class="cover-hero" aria-label="首页封面">
+      <div class="cover-bg" role="img" aria-label="首页背景图占位"></div>
+      <div class="cover-content">
+        <p class="cover-kicker">AI PRODUCT · VIBE CODING · 2026</p>
+        <h1>JOELY</h1>
+        <p class="cover-role">AI PRODUCT EXPLORER</p>
+        <div class="cover-manifesto">
+          <span>MANIFESTO</span>
+          <strong>「在过载的信息里，筛出真正值得行动的信号。」</strong>
         </div>
-        <div class="product-list" id="product-list" aria-label="产品列表"></div>
-      </aside>
-
-      <section class="editor" aria-label="拆解编辑器">
-        <form class="form" id="teardown-form">
-          <label>
-            产品名
-            <input name="name" autocomplete="off" placeholder="例如 Cursor">
-          </label>
-          <label>
-            类型
-            <input name="category" autocomplete="off" placeholder="例如 AI Coding Tool">
-          </label>
-          <label>
-            一句话定位
-            <textarea name="positioning" rows="3" placeholder="它是什么，帮谁解决什么问题？"></textarea>
-          </label>
-          <label>
-            目标用户
-            <textarea name="users" rows="3" placeholder="谁会高频使用它？"></textarea>
-          </label>
-          <label>
-            核心场景
-            <textarea name="scenario" rows="3" placeholder="用户在什么任务里会打开它？"></textarea>
-          </label>
-          <label>
-            AI 介入方式
-            <textarea name="aiRole" rows="3" placeholder="AI 具体替用户做了哪一步？"></textarea>
-          </label>
-          <label>
-            用户为什么留下
-            <textarea name="retention" rows="3" placeholder="它如何降低成本、提升效率或形成习惯？"></textarea>
-          </label>
-          <label>
-            商业模式
-            <textarea name="business" rows="2" placeholder="订阅、团队版、API、企业采购等。"></textarea>
-          </label>
-          <label>
-            我能学到什么
-            <textarea name="lesson" rows="3" placeholder="对你做 AI 产品有什么启发？"></textarea>
-          </label>
-        </form>
-
-        <div class="actions">
-          <button class="tool-button primary" id="save-card" type="button">保存卡片</button>
-          <button class="tool-button" id="export-card" type="button">导出 Markdown</button>
-          <button class="tool-button danger" id="delete-card" type="button">删除当前</button>
-        </div>
-
-        <article class="card" id="teardown-card" aria-live="polite"></article>
-      </section>
+        <a class="cover-enter" href="about.html" aria-label="进入个人网站">
+          <span>▼</span>
+          <strong>ENTER</strong>
+        </a>
+      </div>
+      <div class="cover-footer">
+        <span>MAIL · <a href="mailto:jiaxin1219wang@163.com">jiaxin1219wang@163.com</a></span>
+        <span>PORTFOLIO · JOELY</span>
+      </div>
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
